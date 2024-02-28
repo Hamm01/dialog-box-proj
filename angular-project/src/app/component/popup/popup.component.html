@@ -1,0 +1,50 @@
+<div class="dialogBox-container">
+  <button class="btn crossBtn" (click)="closepopup()">&times;</button>
+  <div class="dialogbox-content">
+    <h2
+      mat-dialog-title
+      class="dialog-title"
+      [translate]="'add_destinations_header'"
+    >
+      {{ data.title }}
+    </h2>
+    <div class="inputFields">
+      <mat-form-field>
+        <input matInput placeholder="UserID" />
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Scan QR Code" />
+      </mat-form-field>
+      <!-- <input type="text" class="input" placeholder="User Id" />
+      <input type="text" class="input" placeholder="Scan QR Code" /> -->
+    </div>
+  </div>
+
+  <!-- <div mat-dialog-content class="dialog-content">
+    <mat-form-field>
+      <input matInput placeholder="UserID" />
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Scan QR Code" />
+    </mat-form-field>
+  </div> -->
+  <div class="dialogBox-footer">
+    <button
+      mat-button
+      id="cancel_destination_btn"
+      color="primary"
+      (click)="closepopup()"
+      class="btn cancelBtn"
+    >
+      <span [translate]="'cancel_caps'">Cancel</span>
+    </button>
+    <button
+      mat-button
+      id="add_destination_btn"
+      color="primary"
+      class="btn continueBtn"
+    >
+      <span [translate]="'add_caps'">Continue</span>
+    </button>
+  </div>
+</div>

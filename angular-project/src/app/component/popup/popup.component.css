@@ -1,0 +1,72 @@
+.dialogBox-container {
+    overflow: hidden;
+    background-color: #fff;
+    position: relative;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dialogbox-content {
+    overflow: hidden;
+    margin-top: 40px;
+    padding: 20px;
+    padding-top: 0px;
+}
+
+.dialog-title {
+    font-size: 14px;
+    color: #2D2E30;
+}
+
+.crossBtn {
+    position: absolute;
+    background: none;
+    border: none;
+    right: 20px;
+    top: 10px;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.inputFields {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    font-size: 14px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.dialogBox-footer {
+    border-top: 1px solid #E4E4E4;
+    padding: 20px;
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    .dialogBox-container {
+        position: fixed;
+        border-radius: 0;
+        width: 100%;
+        bottom: 0;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .crossBtn {
+        font-size: 30px;
+    }
+
+    .dialogBox-footer {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
